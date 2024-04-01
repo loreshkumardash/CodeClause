@@ -1,0 +1,229 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #edf6f9;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgb(0, 153, 117),rgb(0, 86, 66));
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    background-color: rgb(11, 11, 11);
+    width: 40rem;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.35rem black;
+}
+header{
+    width: 100%;
+}
+header h2{
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 span{
+    font-family: 'Trebuchet MS';
+    margin-left: 1rem;
+    font-size: 1.7rem;
+}
+header h2 a{
+    background-color: rgb(0, 153, 117);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+header h2 a:hover{
+    background-color: rgb(0, 126, 96);
+}
+header h2 a:active{
+    background-color: rgb(0, 153, 117);
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    height: 85%;
+}
+
+.budget__numbers{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 1rem 0 2rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 0.05rem solid rgb(125, 125, 125);
+}
+
+.number{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(30, 30, 30);
+    padding: 1rem 1rem 0.7rem 1rem;
+    border-radius: 0.5rem;
+    width: 29%;
+}
+.number span,.number p{
+    margin: 0.3rem auto;
+    font-size: 1rem;
+}
+.amount__container{
+    display: flex;
+}
+
+#amount__earned,#earned__symbol{
+    color: rgb(62, 179, 62);
+}
+#amount__spent,#spent__symbol{
+    color: rgb(255, 84, 84);
+}
+
+.input__area p{
+    margin: 0 0 0.3rem 0.2rem;
+}
+.input__area input{
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    outline: none;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    margin: auto 0.4rem auto auto;
+    font-size: 1rem;
+}
+.input__area input:focus{
+    background-color: rgb(35, 35, 35);
+    border: 0.05rem rgb(0, 153, 117) solid;
+}
+#rupee{
+    margin-left: 0.8rem;
+    font-size: 1.2rem;
+}
+.input__area #description{
+    width: 45%;
+}
+
+.input__area #amount{
+    width: 45%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.buttons__area{
+    margin: 1rem 0 1rem 0;
+}
+
+.buttons__area #add__income,
+.buttons__area #add__expense{
+    border: none;
+    padding: 0.7rem 1.3rem;
+    color: white;
+    border-radius: 0.5rem;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin: 0.5rem 1rem 1rem 1rem;
+}
+
+#add__income{
+    background-color: rgb(44, 166, 44);
+}
+#add__income:hover{
+    background-color: rgb(38, 135, 38);
+}
+#add__income:active{
+    background-color: rgb(44, 166, 44);
+}
+#add__expense{
+    background-color: rgb(255, 54, 54);
+}
+#add__expense:hover{
+    background-color: rgb(255, 37, 37);
+}
+#add__expense:active{
+    background-color: rgb(255, 54, 54);
+}
+.items__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 90%;
+    border-top: 0.05rem solid rgb(125, 125, 125);
+}
+
+#income__container h2,#expenses__container h2{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin: 1rem auto 0.5rem auto;
+}
+
+#income__container h2{
+    color: rgb(62, 179, 62);
+}
+#expenses__container h2{
+    color: rgb(255, 84, 84);
+}
+
+.items__container .container{
+    width: 40%;
+    border-radius: 0.5rem;
+}
+.item h4{
+    font-weight: 500;
+}
+
+.container .item{
+    width: 100%;
+    background-color: rgb(30, 30, 30);
+    border-radius: 0.5rem;
+    margin: 0.3rem 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 1rem;
+    position: relative;
+}
+
+.item__income,
+.item__expense{
+    display: flex;
+}
+
+.income span, .income p{
+    color: rgb(62, 179, 62);
+}
+.expense span, .expense p{
+    color:rgb(255, 84, 84);
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    color: rgb(0, 221, 169);
+    text-decoration: underline;
+}

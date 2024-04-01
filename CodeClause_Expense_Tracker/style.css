@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgb(0, 153, 117),rgb(0, 86, 66));
+}
+header,footer{
+    height: 8%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(11, 11, 11);
+    color: white;
+}
+header h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    white-space: nowrap;
+    font-size: 1.8rem;
+}
+main{
+    height: 84%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form ,#regform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 28rem;
+    height: 70%;
+    border-radius: 1.5rem;
+    background-color: rgb(11, 11, 11);
+    box-shadow: 0 0 0.35rem black;
+    color: white;
+}
+#regform{
+    height: 90%;
+}
+form p a{
+    color: rgb(94, 94, 255);
+    text-decoration: none;
+}
+form p a:hover{
+    text-decoration: underline;
+}
+form input{
+    margin: 2rem auto;
+    height: 1.5rem;
+    width: 50%;
+    background-color: rgb(31, 31, 31);
+    border: none;
+    padding: 0.4rem;
+    font-size: 1rem;
+    color: white;
+    outline: none;
+    border-radius: 0.5rem;
+}
+form input:focus{
+    background-color: rgb(41, 41, 41);
+    border: 0.1rem rgb(0, 153, 117) solid;
+}
+form p{
+    width: 15rem;
+    text-align: left;
+    margin: 0 0 -1.8rem 0.5rem;
+}
+#sub{
+    margin: 1rem auto;
+    margin-top: 0;
+    width: 5.5rem;
+    height: 2rem;
+    background-color: rgb(0, 147, 113);
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+#sub:hover{
+    background-color: rgb(0, 122, 94);
+}
+#sub:active{
+    border: none;
+    background-color: rgb(0, 154, 118);
+}
+#reg{
+    margin-top: 1rem;
+    text-align: center;
+}
+footer p{
+    white-space: nowrap;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    color: rgb(0, 221, 169);
+    text-decoration: underline;
+}
